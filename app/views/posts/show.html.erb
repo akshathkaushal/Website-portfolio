@@ -1,0 +1,37 @@
+<%= render 'posts/extendfile' %>
+
+  <!-- Page Content -->
+  <div class="container">
+    <%= link_to 'Back', posts_path, class: "btn btn-primary" %>
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="container">
+
+        <!-- Title -->
+        <p class="show-post-title"><%= @post.title %></p>
+        <hr>
+        <p class="show-post-date" id="date"><%= @post.created_at %></p>
+        <!-- Post Content -->
+        <div class="show-post-body"><%= @post.body.html_safe %></div>
+        
+        <%= render 'comments/form' %>
+        
+        <!-- Single Comment -->
+        <% if @post.comments.count == 1 %>
+            <h2 class="subtitle is-5" style="margin-left: 50px;"><strong><%= @post.comments.count %></strong> comment</h2>
+        <% else %>
+            <h2 class="subtitle is-5" style="margin-left: 50px;"><strong><%= @post.comments.count %></strong> comments</h2>
+        <% end %>
+        <hr style="width:82%; margin-left: 45px;">
+        
+        <%= render @post.comments %>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+

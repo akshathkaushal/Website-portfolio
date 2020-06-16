@@ -1,0 +1,123 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.hello-msg {
+    font-size: large;
+}
+
+.my-name {
+    font-size: xx-large;
+    color: #3d8888;
+}
+
+.description {
+    color: grey;
+    font-size: medium;
+}
+
+// intro and info
+div.basic-info {
+    margin-top: 30px;
+    max-width: 900px;
+}
+.intro-line {
+    font-size: 40px;
+}
+
+.info-text {
+    text-align: left;
+    font-size: 20px;
+}
+
+
+//
+
+// posts and projects
+
+.posts-heading, .projects-heading {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.post-card {
+	padding: 15px;
+	font-size: 40px;
+	height: 125px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px #3d8888;
+}
+
+.project-card {
+	padding: 10px;
+	margin-right: 30px;
+    height: 125px;
+    box-shadow: 2px 2px 5px #3d8888;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-title:hover {
+    color: #91FFDF;
+}
+
+
+.view-btn {
+    color: #71eeb8;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+
+.view-btn:hover {
+    color: #71eeb8;
+    text-decoration: underline;
+}
+
+// icons 
+
+.float{
+	position:fixed;
+	//background-color:#0C9;
+    //color:#FFF;
+    color: black;
+	border-radius:50px;
+	text-align:center;
+	//box-shadow: 2px 2px 3px #999;
+}
+
+.float:hover {
+    color: #71eeb8;
+}
+
+.f1 {
+    width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+}
+
+.f2 {
+    width:60px;
+	height:60px;
+	bottom:100px;
+	right:40px;
+}
+
+.f3 {
+    width:60px;
+	height:60px;
+	bottom:160px;
+	right:40px;
+}
+.my-float{
+	margin-top:22px;
+}
