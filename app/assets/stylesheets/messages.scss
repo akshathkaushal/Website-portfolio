@@ -1,0 +1,76 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.catchline {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.contact-box {
+    height: 250px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+.contact-links {
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.info, .info a {
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.direct-contact {
+    margin-left: 200px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+// form
+
+.container legend {
+	margin-top: 35px;
+	margin-left: auto;
+	margin-right: auto;
+    color: black;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.bg1 {
+  margin-top: 20px;
+}
+
+.form-horizontal {
+	width: 85%;
+	margin: 0 auto 0 auto;
+	padding: 10px;
+}
+
+.input-group {
+    padding:5px;
+}
+
+.control-label {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.msg-submit {
+    padding: 5px;
+}
+
+.errors {
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}

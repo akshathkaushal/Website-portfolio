@@ -1,0 +1,14 @@
+<div class="card comment-card my-4">
+    <h4 class="card-header">Leave a Comment:</h4>
+    <div class="card-body">
+        <%= simple_form_for([@post, @post.comments.build]) do |f| %>
+            <div class="form-group">
+                <%= f.input :name, input_html: { class: 'form-control' }, wrapper: false %>
+            </div>
+            <div class="form-group">
+                <%= f.input :comment, input_html: { class: 'form-control', rows: "7" }, wrapper: false %>
+            </div>
+            <%= f.button :submit,  class: "btn btn-success" %>
+        <% end %>
+    </div>
+</div>

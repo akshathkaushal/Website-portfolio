@@ -1,0 +1,65 @@
+<%= render 'posts/extendfile' %>
+  
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4" id="headline"><strong>Blog Posts</strong></h1>
+        <% @posts.each do |post| %>
+          <!-- Blog Post -->
+          <div class="card post">
+            <div class="card-body">
+              <h2><a href="posts/<%= post.id %>" class="card-title post-title"><%= post.title %></a></h2>
+              <h4 class="card-description"><%= post.description %></h4>
+              
+            </div>
+          </div>
+        <% end %>  
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+        <br><br><br>
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h4 class="card-header" id="headline"><strong>My areas of interest</strong></h4>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li><a id="int_i" href="https://en.wikipedia.org/wiki/Computer_network" target="_blank">Computer Networks</a></li>
+                  <li><a id="int_i" href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Artificial Intelligence</a></li>
+                  <li><a id="int_i" href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">Machine Learning</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li><a id="int_i" href="https://en.wikipedia.org/wiki/Linux" target="_blank">Linux</a></li>
+                  <li><a id="int_i" href="https://en.wikipedia.org/wiki/Robotics" target="_blank">Robotics</a></li>
+                  <li><a id="int_i" href="https://en.wikipedia.org/wiki/Computer_security" target="_blank">Cyber Security</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h4 class="card-header" id="headline"><strong>So they say...</strong></h4>
+          <!-- get quote -->
+          <div class="card-body" id="displayquote">
+            <p style="font-size: 15px;">“Two things are infinite: the universe and human stupidity; and I am not sure about the universe.”</p>
+            <p style="font-size: 17px;">-Albert Einstein</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->

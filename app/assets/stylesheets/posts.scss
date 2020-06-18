@@ -1,0 +1,65 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// index page
+.card-header {
+    background-image: linear-gradient(180deg, #91FFDF, #3d8888);
+}
+
+#int_i {
+    color: black;
+    font-size: 15px;
+}
+
+#int_i:hover {
+    text-decoration: none;
+    color: #91FFDF;
+}
+
+#headline {
+    text-align: center;
+}
+
+.show-post-description {
+    padding: 10px;
+}
+
+.post {
+    box-shadow: 2px 2px 5px #3d8888;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    padding: 10px;
+}
+
+.card-description {
+    padding: 10px;
+}
+
+.post-body:hover {
+    color: black;
+}
+
+// show page 
+.show-post-body {
+    margin-bottom: 50px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.show-post-title {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.show-post-date {
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    float: right;
+    margin-right: 50px;
+}
+// 

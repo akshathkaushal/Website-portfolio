@@ -1,0 +1,27 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.headline {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+    color: #91FFDF;
+}
+
+.box {
+    box-shadow: 2px 2px 5px #3d8888;
+    height: 300px;
+    max-height: 300px;
+}
+
+.card-text {
+    font-size: 15px;
+    padding: 10px;
+}

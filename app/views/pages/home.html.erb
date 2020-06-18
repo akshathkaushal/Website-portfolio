@@ -1,0 +1,69 @@
+<div class="container text-center">
+    <img src="assets/akshath-1.5x.png" alt="Akshath Kaushal">
+    <div class="hello-msg">
+        <strong><span class="my-name">Akshath Kaushal</span></strong>
+        <span class="description">Coder, Blogger, Networks enthusiast</span>
+        <hr>
+    </div>
+</div>
+
+<div class="container basic-info">
+    <span class="intro-line">Hey I'm Akshath!</span>
+    <div class="info">
+        <p class="info-text">
+            I am a third year Electronics student<a href="https://www.iiitb.ac.in/" style="font-size: 20px; color:#3d8888;">@IIIT Bangalore.</a>
+        </p>
+        <p class="info-text">
+            Highly motivated and enthusiastic, I am consistently working hard to develop a career in the field of Networking and Cyber Security.
+        </p>
+        <p class="info-text">
+            In my free time, if I am not tinkering with my laptop, one can find me reading articles about various spheres of life.
+        </p>
+        <p class="info-text">Find more about me<%= link_to "here", aboutme_path, style: "color: #3d8888; font-size:20px;" %></p>
+    </div>
+    <hr>
+
+    <div class="container projects">
+        <!-- my recent projects -->
+        <div class="projects-heading">Recent projects</div>
+        <% Project.last(2).each do |project| %>
+        <div class="card project-card col-md-5">
+            <div class="card-body-project">
+            <h2><a href="https://<%= project.link %>" target="_blank" class="card-title"><%= project.title %></a></h2>
+              <h5 class="card-title-description"><%= project.description %></h5>
+            </div>
+          </div>
+        <% end %>
+    </div><br><br>
+    <%= link_to 'View all', projects_path, class: "view-btn" %>
+    
+    
+    <div class="container posts">
+        <!-- my recent posts -->
+        <div class="posts-heading">Recent posts</div>
+        <% Post.last(2).each do |post| %>
+        <div class="card post-card">
+            <div class="card-body-post">
+              <h2><a href="posts/<%= post.id %>" class="card-title"><%= post.title %></a></h2>
+              <h5 class="card-title-description"><%= post.description %></h5>
+            </div>
+          </div>
+        <% end %>
+    </div>
+    <%= link_to 'View all', posts_path, class: "view-btn" %>
+    
+
+    <a href="https://github.com/akshathkaushal" class="float f1" data-toggle="tooltip" title="My GitHub" target="_blank">
+      <i class="fa fa-github my-float-github fa-4x"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/akshath-kaushal-08277817b" class="float f2" data-toggle="tooltip" title="My LinkedIn" target="_blank">
+      <i class="fa fa-linkedin my-float-linkedin fa-4x"></i>
+    </a>
+
+    <a href="https://drive.google.com/open?id=1FFcCSWWD59gaYG4HTHT4GQQLsFt8lcvX" class="float f3" data-toggle="tooltip" title="My Resume" target="_blank">
+      <i class="fa fa-file-text-o my-float-resume fa-4x"></i>
+    </a> 
+
+</div>
+
